@@ -57,3 +57,23 @@
         });
     }
 })();
+
+/* 導覽列：登入後「個人」顯示帳號名、「登入」變「登出」 */
+(function () {
+    var user; try { user = localStorage.getItem('dh-user'); } catch (e) {}
+    if (!user) return;
+    var profileLink = document.querySelector('a[href="profile.html"]');
+    if (profileLink) profileLink.textContent = user;
+    var loginLink = document.querySelector('a[href="login.html"]');
+    if (loginLink) {
+        loginLink.textContent = '登出';
+        loginLink.removeAttribute('href');
+        loginLink.style.cursor = 'pointer';
+        loginLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            try { localStorage.removeItem('dh-user'); } catch (e) {}
+            location.reload();
+        });
+    }
+})();
+

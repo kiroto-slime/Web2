@@ -437,3 +437,22 @@
     background: rgba(22,27,34,0.95);
     backdrop-filter: blur(12px);
 }
+
+/* 導覽列：隱藏「首頁」連結（Logo 已是回首頁的入口）*/
+.app-navbar .navbar-nav li:has(> a[href="index.html"]) { display: none; }
+
+/* 導覽列：設定 / 個人 做成按鈕樣式（邊框 + hover 動畫）*/
+.app-navbar a[href="settings.html"],
+.app-navbar a[href="profile.html"] {
+    border: 1px solid var(--bs-border-color);
+    border-radius: 6px;
+    padding: 4px 12px !important;
+    transition: color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease;
+}
+.app-navbar a[href="settings.html"]:hover,
+.app-navbar a[href="profile.html"]:hover {
+    border-color: var(--bs-primary);
+    color: var(--bs-primary) !important;
+    background: rgba(88,166,255,0.08);
+    transform: translateY(-1px);
+}
