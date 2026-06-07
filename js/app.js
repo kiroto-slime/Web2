@@ -40,7 +40,7 @@ const TASKS = [
             },
             {
                 id: 'q2_2',
-                text: '/home/ubuntu 目錄下那個隱藏較深的檔案叫什麼名字?',
+                text: '/home/slime 目錄下那個隱藏較深的檔案叫什麼名字?',
                 answer: '.secret.txt',
                 hint: '執行看看上面的指令？',
             },
