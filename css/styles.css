@@ -398,6 +398,16 @@
     .progress-wrap { display: none; }            /* 進度由任務勾勾呈現 */
     .btn-split { font-size: 0; padding: 7px 9px; flex-shrink: 0; }  /* 只剩圖示 */
 }
+
+/* 手機收合選單：右側（設定/個人/登入）改直排，與主選單一致 */
+@media (max-width: 991.98px) {
+    .navbar-collapse > .d-flex {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: .5rem !important;
+        margin-top: .5rem;
+    }
+}
 #loading {
     position: fixed;
     inset: 0;
