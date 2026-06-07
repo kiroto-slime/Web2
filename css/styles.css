@@ -386,6 +386,17 @@
     .terminal-panel { width: 100%; position: fixed; top: 56px; left: 0; right: 0; bottom: 0; z-index: 50; }
     .main-content.split .question-panel { width: 100%; display: none; }
     .room-info-header { flex-direction: column; }
+
+    /* 手機標頭：壓縮空間，確保 Split View 按鈕看得到 */
+    .header { padding: 0 12px; gap: 8px; }
+    .header-left  { gap: 8px; min-width: 0; }   /* 允許縮小，標題才能截斷 */
+    .header-right { gap: 10px; }
+    .room-meta { min-width: 0; }
+    .room-title-header {
+        overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    }
+    .progress-wrap { display: none; }            /* 進度由任務勾勾呈現 */
+    .btn-split { font-size: 0; padding: 7px 9px; flex-shrink: 0; }  /* 只剩圖示 */
 }
 #loading {
     position: fixed;
