@@ -301,7 +301,7 @@ class App {
     _renderQuestion(q) {
         const done = !!this.progress[q.id];
         return `
-            <div class="question-item" id="qitem-${q.id}">
+            <div class="question-item${done ? ' answered' : ''}" id="qitem-${q.id}">
                 <div class="question-text">${q.text}</div>
                 <div class="answer-row">
                     <input
@@ -351,6 +351,8 @@ class App {
             input.disabled = true;
             input.classList.add('correct');
             input.classList.remove('wrong');
+            const qitem = document.getElementById(`qitem-${qid}`);
+            if (qitem) qitem.classList.add('answered');
             if (btn) { btn.textContent = '✓ Correct'; btn.disabled = true; }
             this._showFeedback(feedback, '✓ Correct! Well done.', 'correct');
             /* 第一題答對時開始計時 */

@@ -81,6 +81,11 @@
 [data-bs-theme="light"] .question-item {
     background: #f6f8fa; border-color: #d0d7de;
 }
+[data-bs-theme="light"] .question-item.answered {
+    border-color: rgba(45,164,78,0.5);
+    background: rgba(45,164,78,0.12);
+    box-shadow: inset 3px 0 0 #2da44e;
+}
 [data-bs-theme="light"] .question-text { color: #1f2328; }
 [data-bs-theme="light"] .answer-input {
     background: #ffffff; border-color: #d0d7de; color: #1f2328;
