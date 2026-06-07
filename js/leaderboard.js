@@ -101,7 +101,7 @@ class LeaderboardPage {
 
         document.getElementById('lbTableWrap').innerHTML = `
             <div class="table-responsive">
-                <table class="table table-dark table-hover mb-0">
+                <table class="table table-hover mb-0">
                     <thead class="text-muted small">
                         <tr>
                             <th class="text-center" style="width:52px">#</th>
