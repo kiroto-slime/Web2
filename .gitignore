@@ -14,3 +14,6 @@ desktop.ini
 
 # Claude Code 紀錄
 .claude/
+
+# 開發文件（設計、計畫）
+docs/
