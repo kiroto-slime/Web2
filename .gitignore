@@ -1,0 +1,16 @@
+# 作業系統垃圾檔
+Thumbs.db
+ehthumbs.db
+desktop.ini
+.DS_Store
+
+# 備份檔
+備份*.zip
+*.zip
+
+# 編輯器設定
+.vscode/
+.idea/
+
+# Claude Code 紀錄
+.claude/
