@@ -317,7 +317,7 @@ class App {
                         ${done ? '✓ Correct' : 'Submit'}
                     </button>
                 </div>
-                ${q.hint ? `
+                ${q.hint && !done ? `
                     <button class="btn-hint" data-hint="${q.id}">💡 Hint</button>
                     <div class="hint-box" id="hint-${q.id}">💡 ${q.hint}</div>
                 ` : ''}
@@ -353,6 +353,10 @@ class App {
             input.classList.remove('wrong');
             const qitem = document.getElementById(`qitem-${qid}`);
             if (qitem) qitem.classList.add('answered');
+            const hintBtn = document.querySelector(`[data-hint="${qid}"]`);
+            const hintBox = document.getElementById(`hint-${qid}`);
+            if (hintBtn) hintBtn.style.display = 'none';
+            if (hintBox) hintBox.style.display = 'none';
             if (btn) { btn.textContent = '✓ Correct'; btn.disabled = true; }
             this._showFeedback(feedback, '✓ Correct! Well done.', 'correct');
             /* 第一題答對時開始計時 */
