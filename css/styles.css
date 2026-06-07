@@ -381,3 +381,32 @@
     .main-content.split .question-panel { width: 100%; display: none; }
     .room-info-header { flex-direction: column; }
 }
+#loading {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: #0d1117;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loading img:first-child {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#loading img:last-child {
+    position: relative;
+    z-index: 1;
+    transform: translateY(-120px);
+}
+
+/* ===== 導覽列背景（可被亮色主題覆蓋）===== */
+.app-navbar {
+    background: rgba(22,27,34,0.95);
+    backdrop-filter: blur(12px);
+}

@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="css/leaderboard.css">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg sticky-top border-bottom border-secondary"
-         style="background:rgba(22,27,34,0.95);backdrop-filter:blur(12px)">
+    <div id="tsparticles"></div>
+    <div id="loading">
+        <img src="image/loading.gif" alt="Loading">
+        <img src="image/loading2.gif" alt="Loading">
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top border-bottom border-secondary app-navbar">
         <div class="container-xxl">
             <a class="navbar-brand fw-bold" href="index.html">
                 Don't <span class="text-primary">HackMe</span>
@@ -80,8 +83,12 @@
         </div>
     </footer>
 
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/data.js"></script>
     <script src="js/leaderboard.js"></script>
+    <script src="js/ani.js"></script>
 </body>
 </html>
