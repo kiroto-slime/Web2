@@ -1,458 +1,177 @@
 /* ===== Bootstrap 深色主題顏色覆蓋 ===== */
+/* 這個區塊定義了整個網站的深色主題顏色
+   當 HTML 標籤有 data-bs-theme="dark" 時，這些變數會被應用 */
 [data-bs-theme="dark"] {
+    // 背景色：頁面主要背景顏色（非常深的藍灰色）
     --bs-body-bg:                   #0d1117;
+    // 文字顏色：主要文字顏色（亮灰色）
     --bs-body-color:                #e6edf3;
+    // 次要文字顏色：用於輔助說明文字
     --bs-secondary-color:           #8b949e;
+    // 次要背景色：如分頁標籤、邊欄等淺色背景
     --bs-secondary-bg:              #161b22;
+    // 第三層背景色：卡片、模式視窗等區域背景
     --bs-tertiary-bg:               #1a2233;
+    // 邊框顏色：元素邊框的預設顏色
     --bs-border-color:              #2d3748;
+    // 半透明邊框：用於需要透明度的邊框
     --bs-border-color-translucent:  rgba(45,55,72,0.5);
 
+    // 卡片背景色
     --bs-card-bg:                   #1a2233;
+    // 卡片邊框色
     --bs-card-border-color:         #2d3748;
+    // 卡片標題背景色
     --bs-card-cap-bg:               #161b22;
 
+    // 主要色（藍色）：按鈕、連結、強調元素
     --bs-primary:                   #58a6ff;
+    // 主要色 RGB 數值（用於透明度調整）
     --bs-primary-rgb:               88,166,255;
+    // 成功色（綠色）：成功提示、完成狀態
     --bs-success:                   #3fb950;
     --bs-success-rgb:               63,185,80;
+    // 警告色（橙色）：警告提示
     --bs-warning:                   #d29922;
     --bs-warning-rgb:               210,153,34;
+    // 危險色（紅色）：錯誤提示、刪除操作
     --bs-danger:                    #f85149;
     --bs-danger-rgb:                248,81,73;
 
+    // 超連結顏色
     --bs-link-color:                #58a6ff;
     --bs-link-color-rgb:            88,166,255;
+    // 超連結滑過時的顏色
     --bs-link-hover-color:          #79b8ff;
 
+    // 模式視窗背景色
     --bs-modal-bg:                  #1a2233;
+    // 模式視窗邊框色
     --bs-modal-border-color:        #2d3748;
+    // 模式視窗標題欄邊框
     --bs-modal-header-border-color: #2d3748;
+    // 模式視窗頁尾邊框
     --bs-modal-footer-border-color: #2d3748;
 
+    // 列表群組背景（透明，讓背景顏色顯示）
     --bs-list-group-bg:             transparent;
+    // 列表群組邊框色
     --bs-list-group-border-color:   #2d3748;
+    // 列表群組文字色
     --bs-list-group-color:          #e6edf3;
 
+    // 表格背景（透明）
     --bs-table-bg:                  transparent;
+    // 表格邊框色
     --bs-table-border-color:        #2d3748;
+    // 表格斑馬條紋背景色
     --bs-table-striped-bg:          rgba(255,255,255,0.03);
+    // 表格列滑過時的背景色
     --bs-table-hover-bg:            rgba(255,255,255,0.05);
 
+    // 輸入框背景色（更深的背景）
     --bs-input-bg:                  #0a0e14;
+    // 輸入框邊框色
     --bs-input-border-color:        #2d3748;
+    // 輸入框文字顏色
     --bs-input-color:               #e6edf3;
+    // 輸入框獲得焦點時的邊框色
     --bs-input-focus-border-color:  #58a6ff;
+    // 輸入框獲得焦點時的陰影效果（藍色光暈）
     --bs-input-focus-box-shadow:    0 0 0 0.25rem rgba(88,166,255,0.25);
 
+    // 進度條背景色
     --bs-progress-bg:               #2d3748;
+    // 進度條填充色（藍色）
     --bs-progress-bar-bg:           #58a6ff;
 
+    // 下拉選單背景色
     --bs-dropdown-bg:               #161b22;
+    // 下拉選單邊框色
     --bs-dropdown-border-color:     #2d3748;
+    // 下拉選單選項文字色
     --bs-dropdown-link-color:       #e6edf3;
+    // 下拉選單選項滑過時的背景色
     --bs-dropdown-link-hover-bg:    rgba(255,255,255,0.06);
 
+    // 導覽列文字顏色（半透明）
     --bs-navbar-color:              rgba(230,237,243,0.6);
+    // 導覽列滑過時的文字顏色
     --bs-navbar-hover-color:        #e6edf3;
+    // 導覽列目前頁面的文字顏色
     --bs-navbar-active-color:       #e6edf3;
+    // 導覽列品牌名稱顏色
     --bs-navbar-brand-color:        #e6edf3;
+    // 導覽列品牌滑過時的顏色
     --bs-navbar-brand-hover-color:  #e6edf3;
+    // 導覽列漢堡菜單邊框色
     --bs-navbar-toggler-border-color: rgba(45,55,72,0.5);
 }
 
-/* btn-primary 顏色細調 */
+/* 主要按鈕的顏色細調 */
 .btn-primary {
+    // 按鈕背景色
     --bs-btn-bg:            #58a6ff;
+    // 按鈕邊框色
     --bs-btn-border-color:  #58a6ff;
+    // 按鈕滑過時的背景色（更亮的藍）
     --bs-btn-hover-bg:      #79b8ff;
+    // 按鈕滑過時的邊框色
     --bs-btn-hover-border-color: #79b8ff;
+    // 按鈕按下時的背景色
     --bs-btn-active-bg:     #79b8ff;
+    // 按鈕文字一定是白色
     color: #fff !important;
 }
 
-/* form-control 深色 */
+/* 表單輸入框的深色風格 */
 .form-control {
+    // 輸入框背景色
     background-color: #0a0e14;
+    // 輸入框邊框色
     border-color: #2d3748;
+    // 輸入框文字顏色
     color: #e6edf3;
 }
+
+// 輸入框獲得焦點時的樣式
 .form-control:focus {
+    // 保持背景色不變
     background-color: #0a0e14;
+    // 邊框改為藍色（表示獲得焦點）
     border-color: #58a6ff;
+    // 文字顏色保持亮色
     color: #e6edf3;
+    // 添加藍色光暈效果
     box-shadow: 0 0 0 0.25rem rgba(88,166,255,0.25);
 }
 
-/* ===== 內部共用變數（終端機 / 動畫用）===== */
+/* ===== 內部共用的設計顏色變數（終端機、動畫、自訂元素用）===== */
 :root {
+    // 強調色：各種互動元素的主要顏色
     --accent:       #58a6ff;
+    // 成功提示的綠色
     --success:      #3fb950;
+    // 警告提示的橙色
     --warning:      #d29922;
+    // 危險操作的紅色
     --danger:       #f85149;
+    // 終端機背景色（非常深的背景）
     --bg-terminal:  #0e1118;
+    // 終端機綠色文字（成功、正常輸出）
     --term-green:   #39ff88;
+    // 終端機黃色文字（注意、提示）
     --term-yellow:  #f0e040;
+    // 終端機紅色文字（錯誤）
     --term-red:     #ff5f56;
+    // 終端機藍色文字（信息）
     --term-blue:    #58a6ff;
+    // 終端機青色文字
     --term-cyan:    #56d4dd;
+    // 終端機提示符的顏色
     --term-prompt:  #58a6ff;
+    // 小圓角半徑
     --radius-sm: 4px;
+    // 中等圓角半徑
     --radius-md: 8px;
-    --radius-lg: 12px;
-    --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
-}
-
-/* ===========================
-   Room 頁面專用佈局
-   =========================== */
-
-.app-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-}
-
-/* Header */
-.header {
-    height: 56px;
-    background: #161b22;
-    border-bottom: 1px solid #2d3748;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    flex-shrink: 0;
-    z-index: 100;
-}
-
-.header-left  { display: flex; align-items: center; gap: 16px; }
-.header-right { display: flex; align-items: center; gap: 16px; }
-
-.logo       { font-size: 18px; font-weight: 700; color: #e6edf3; }
-.logo span  { color: #58a6ff; }
-
-.room-meta  { display: flex; align-items: center; gap: 8px; }
-
-.room-badge {
-    background: rgba(88,166,255,0.1);
-    color: #58a6ff;
-    border: 1px solid rgba(88,166,255,0.3);
-    font-size: 11px; font-weight: 600;
-    padding: 2px 8px; border-radius: 20px;
-    text-transform: uppercase; letter-spacing: 0.5px;
-}
-
-.room-title-header { color: #8b949e; font-size: 14px; }
-
-.progress-wrap  { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; }
-.progress-label { font-size: 12px; color: #8b949e; }
-.progress-track { width: 120px; height: 4px; background: #2d3748; border-radius: 2px; overflow: hidden; }
-.progress-fill  { height: 100%; background: linear-gradient(90deg,#58a6ff,#3fb950); border-radius: 2px; transition: width .5s ease; }
-
-.btn-split {
-    display: flex; align-items: center; gap: 8px;
-    background: #1a2233; border: 1px solid #3d4f68;
-    color: #e6edf3; padding: 7px 14px;
-    border-radius: var(--radius-md);
-    font-size: 13px; font-weight: 500; cursor: pointer;
-    transition: background var(--transition), border-color var(--transition), color var(--transition);
-}
-.btn-split:hover  { background: #1e2a3a; border-color: #58a6ff; color: #58a6ff; }
-.btn-split.active { background: rgba(88,166,255,0.15); border-color: #58a6ff; color: #58a6ff; }
-
-.btn-back {
-    display: inline-flex; align-items: center; gap: 6px;
-    color: #8b949e; text-decoration: none; font-size: 13px;
-    padding: 5px 10px; border-radius: var(--radius-sm);
-    transition: color var(--transition), background var(--transition);
-}
-.btn-back:hover { color: #e6edf3; background: rgba(255,255,255,0.06); }
-
-.header-sep { width: 1px; height: 20px; background: #2d3748; flex-shrink: 0; }
-
-/* Main split layout */
-.main-content {
-    display: flex;
-    flex: 1;
-    overflow: hidden;
-}
-
-/* Question Panel */
-.question-panel {
-    flex: 1;
-    overflow-y: auto;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    scrollbar-width: thin;
-    scrollbar-color: #2d3748 transparent;
-}
-.question-panel::-webkit-scrollbar { width: 6px; }
-.question-panel::-webkit-scrollbar-track { background: transparent; }
-.question-panel::-webkit-scrollbar-thumb { background: #2d3748; border-radius: 3px; }
-
-.room-info-card { background: #1a2233; border: 1px solid #2d3748; border-radius: var(--radius-lg); padding: 24px; }
-.room-info-header { display: flex; gap: 16px; align-items: flex-start; }
-.room-icon { font-size: 40px; line-height: 1; flex-shrink: 0; }
-.room-name { font-size: 22px; font-weight: 700; color: #e6edf3; margin-bottom: 8px; }
-.room-desc { color: #8b949e; font-size: 14px; line-height: 1.7; margin-bottom: 14px; }
-
-.tag-list { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag {
-    background: rgba(88,166,255,0.08); color: #58a6ff;
-    border: 1px solid rgba(88,166,255,0.2);
-    font-size: 11px; font-weight: 600;
-    padding: 3px 10px; border-radius: 20px;
-}
-
-/* Tasks */
-.tasks-list { display: flex; flex-direction: column; gap: 12px; }
-
-.task-card {
-    background: #1a2233;
-    border: 1px solid #2d3748;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-    transition: border-color var(--transition);
-}
-.task-card.completed { border-color: rgba(63,185,80,0.4); }
-.task-card.active    { border-color: rgba(88,166,255,0.4); box-shadow: 0 0 0 1px rgba(88,166,255,0.1); }
-.task-card.locked    { opacity: 0.5; pointer-events: none; }
-
-.task-header {
-    display: flex; align-items: center; gap: 12px;
-    padding: 14px 18px; cursor: pointer; user-select: none;
-    transition: background var(--transition);
-}
-.task-header:hover { background: #1e2a3a; }
-
-.task-number {
-    width: 28px; height: 28px; border-radius: 50%;
-    display: flex; align-items: center; justify-content: center;
-    font-size: 12px; font-weight: 700; flex-shrink: 0;
-    border: 2px solid #3d4f68; color: #8b949e;
-    transition: all var(--transition);
-}
-.task-card.completed .task-number { background: #3fb950; border-color: #3fb950; color: #fff; }
-.task-card.active    .task-number { border-color: #58a6ff; color: #58a6ff; }
-
-.task-info    { flex: 1; }
-.task-title   { font-size: 14px; font-weight: 600; color: #e6edf3; margin-bottom: 2px; }
-.task-subtitle{ font-size: 12px; color: #484f58; }
-.task-status  { font-size: 18px; flex-shrink: 0; }
-.task-chevron { color: #484f58; font-size: 12px; transition: transform var(--transition); flex-shrink: 0; }
-.task-card.open .task-chevron { transform: rotate(180deg); }
-
-.task-body { border-top: 1px solid #2d3748; display: none; }
-.task-card.open .task-body { display: block; }
-
-.task-description { padding: 16px 18px; color: #8b949e; font-size: 13px; line-height: 1.8; border-bottom: 1px solid #2d3748; }
-.task-description code { background: rgba(88,166,255,0.1); color: #56d4dd; padding: 1px 6px; border-radius: 4px; font-family: 'Menlo','Monaco',monospace; font-size: 12px; }
-
-.questions-list { padding: 12px 18px; display: flex; flex-direction: column; gap: 12px; }
-
-.question-item { background: #1e2a3a; border: 1px solid #2d3748; border-radius: var(--radius-md); padding: 14px; transition: background var(--transition), border-color var(--transition); }
-.question-item.answered {
-    border-color: rgba(63,185,80,0.45);
-    background: rgba(63,185,80,0.10);
-    box-shadow: inset 3px 0 0 #3fb950;
-}
-.question-text { font-size: 13px; color: #e6edf3; margin-bottom: 10px; font-weight: 500; }
-.answer-row    { display: flex; gap: 8px; align-items: center; }
-
-.answer-input {
-    flex: 1;
-    background: #0a0e14; border: 1px solid #2d3748;
-    border-radius: var(--radius-sm); padding: 8px 12px;
-    color: #e6edf3; font-size: 13px;
-    font-family: 'Menlo','Monaco',monospace;
-    outline: none; transition: border-color var(--transition);
-}
-.answer-input:focus   { border-color: #58a6ff; }
-.answer-input.correct { border-color: #3fb950; background: rgba(63,185,80,0.08); }
-.answer-input.wrong   { border-color: #f85149; animation: shake .3s ease; }
-.answer-input:disabled{ opacity: .7; cursor: default; }
-
-@keyframes shake {
-    0%,100% { transform: translateX(0); }
-    25%      { transform: translateX(-6px); }
-    75%      { transform: translateX(6px); }
-}
-
-.btn-check {
-    background: #58a6ff; color: #fff; border: none;
-    padding: 8px 14px; border-radius: var(--radius-sm);
-    font-size: 13px; font-weight: 600; cursor: pointer;
-    transition: opacity var(--transition); white-space: nowrap;
-}
-.btn-check:hover    { opacity: .85; }
-.btn-check:disabled { background: #2d3748; color: #484f58; cursor: default; }
-
-.btn-hint {
-    background: transparent; border: 1px solid #2d3748; color: #484f58;
-    padding: 4px 10px; border-radius: var(--radius-sm);
-    font-size: 11px; cursor: pointer; margin-top: 8px;
-    transition: all var(--transition);
-}
-.btn-hint:hover { border-color: #d29922; color: #d29922; }
-
-.hint-box {
-    margin-top: 8px;
-    background: rgba(210,153,34,0.08); border: 1px solid rgba(210,153,34,0.3);
-    border-radius: var(--radius-sm); padding: 10px 12px;
-    font-size: 12px; color: #d29922; display: none;
-}
-.hint-box.visible { display: block; }
-
-.feedback-msg        { font-size: 12px; margin-top: 6px; display: none; }
-.feedback-msg.show   { display: block; }
-.feedback-msg.correct{ color: #3fb950; }
-.feedback-msg.wrong  { color: #f85149; }
-
-/* Divider */
-.divider { width: 1px; background: #2d3748; flex-shrink: 0; display: none; }
-.main-content.split .divider { display: block; }
-
-/* Terminal Panel */
-.terminal-panel {
-    width: 55%; flex-shrink: 0;
-    display: flex; flex-direction: column;
-    background: var(--bg-terminal); overflow: hidden;
-}
-.terminal-panel.hidden { display: none; }
-.main-content.split .question-panel { flex: none; width: 45%; }
-
-.terminal-chrome {
-    display: flex; align-items: center; gap: 10px;
-    background: #1c1c1e; padding: 0 14px; height: 38px;
-    border-bottom: 1px solid #2a2a2e; flex-shrink: 0;
-}
-.chrome-dots { display: flex; gap: 6px; align-items: center; }
-.dot         { width: 12px; height: 12px; border-radius: 50%; }
-.dot-red     { background: #ff5f56; }
-.dot-yellow  { background: #ffbd2e; }
-.dot-green   { background: #27c93f; }
-.chrome-title{ flex: 1; text-align: center; font-size: 12px; color: #888; font-family: 'Menlo','Monaco',monospace; }
-
-.btn-close {
-    background: none; border: none; color: #555;
-    font-size: 14px; cursor: pointer; padding: 4px 6px;
-    border-radius: 4px; line-height: 1; transition: color var(--transition);
-}
-.btn-close:hover { color: #f85149; }
-
-.terminal-body {
-    flex: 1; overflow-y: auto; padding: 12px 16px;
-    font-family: 'Menlo','Monaco','Courier New',monospace;
-    font-size: 13px; line-height: 1.6; cursor: text;
-    color: #e6edf3;
-    scrollbar-width: thin; scrollbar-color: #333 transparent;
-}
-.terminal-body::-webkit-scrollbar       { width: 6px; }
-.terminal-body::-webkit-scrollbar-track { background: transparent; }
-.terminal-body::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
-
-.terminal-output { white-space: pre-wrap; word-break: break-all; }
-.t-line          { margin: 0; line-height: 1.5; }
-.t-line.cmd-echo { color: #8b949e; }
-.t-line .t-prompt{ color: #58a6ff; font-weight: 600; }
-.t-line .t-cmd   { color: #e6edf3; }
-
-.t-success { color: #39ff88; }
-.t-error   { color: #ff5f56; }
-.t-warn    { color: #f0e040; }
-.t-info    { color: #56d4dd; }
-.t-dir     { color: #58a6ff; font-weight: 600; }
-.t-file    { color: #e6edf3; }
-.t-exec    { color: #39ff88; font-weight: 600; }
-.t-dim     { color: #555; }
-.banner    { color: #39ff88; margin-bottom: 4px; }
-
-.terminal-input-row { display: flex; align-items: center; margin-top: 2px; }
-.prompt { color: #58a6ff; font-weight: 600; white-space: nowrap; flex-shrink: 0; }
-
-.terminal-input {
-    flex: 1; background: transparent; border: none; outline: none;
-    color: #e6edf3;
-    font-family: 'Menlo','Monaco','Courier New',monospace;
-    font-size: 13px; caret-color: #39ff88; width: 100%;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .terminal-panel { width: 100%; position: fixed; top: 56px; left: 0; right: 0; bottom: 0; z-index: 50; }
-    .main-content.split .question-panel { width: 100%; display: none; }
-    .room-info-header { flex-direction: column; }
-
-    /* 手機標頭：壓縮空間，確保 Split View 按鈕看得到 */
-    .header { padding: 0 12px; gap: 8px; }
-    .header-left  { gap: 8px; min-width: 0; }   /* 允許縮小，標題才能截斷 */
-    .header-right { gap: 10px; }
-    .room-meta { min-width: 0; }
-    .room-title-header {
-        overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-    }
-    .progress-wrap { display: none; }            /* 進度由任務勾勾呈現 */
-    .btn-split { font-size: 0; padding: 7px 9px; flex-shrink: 0; }  /* 只剩圖示 */
-}
-
-/* 手機收合選單：右側（設定/個人/登入）改直排，與主選單一致 */
-@media (max-width: 991.98px) {
-    .navbar-collapse > .d-flex {
-        flex-direction: column;
-        align-items: flex-start !important;
-        gap: .5rem !important;
-        margin-top: .5rem;
-    }
-}
-#loading {
-    position: fixed;
-    inset: 0;
-    z-index: 9999;
-    background: #0d1117;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#loading img:first-child {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-#loading img:last-child {
-    position: relative;
-    z-index: 1;
-    transform: translateY(-120px);
-}
-
-/* ===== 導覽列背景（可被亮色主題覆蓋）===== */
-.app-navbar {
-    background: rgba(22,27,34,0.95);
-    backdrop-filter: blur(12px);
-}
-
-/* 導覽列：隱藏「首頁」連結（Logo 已是回首頁的入口）*/
-.app-navbar .navbar-nav li:has(> a[href="index.html"]) { display: none; }
-
-/* 導覽列：設定 / 個人 做成按鈕樣式（邊框 + hover 動畫）*/
-.app-navbar a[href="settings.html"],
-.app-navbar a[href="profile.html"] {
-    border: 1px solid var(--bs-border-color);
-    border-radius: 6px;
-    padding: 4px 12px !important;
-    transition: color .2s ease, border-color .2s ease, background .2s ease, transform .2s ease;
-}
-.app-navbar a[href="settings.html"]:hover,
-.app-navbar a[href="profile.html"]:hover {
-    border-color: var(--bs-primary);
-    color: var(--bs-primary) !important;
-    background: rgba(88,166,255,0.08);
-    transform: translateY(-1px);
 }
